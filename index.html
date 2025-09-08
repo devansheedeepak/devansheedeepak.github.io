@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Devanshee — Official Site</title>
+  <meta name="description" content="Devanshee: Portfolio, projects, and contact. Official personal site." />
+  <link rel="canonical" href="https://yourname.tld/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Devanshee — Official Site" />
+  <meta property="og:description" content="Portfolio, projects, and contact." />
+  <meta property="og:url" content="https://yourname.tld/" />
+  <meta property="og:image" content="https://yourname.tld/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Devanshee — Official Site" />
+  <meta name="twitter:description" content="Portfolio, projects, and contact." />
+  <meta name="twitter:image" content="https://yourname.tld/og-image.jpg" />
+
+  <!-- JSON-LD ProfilePage (no employer fields) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Devanshee",
+      "url": "https://yourname.tld/",
+      "description": "Professional profile and portfolio.",
+      "image": "https://yourname.tld/me.jpg",
+      "sameAs": [
+        "https://about.me/yourname",
+        "https://medium.com/@yourhandle",
+        "https://www.youtube.com/@yourname"
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0b0b0f;
+      --card: #121217;
+      --text: #eaeaf0;
+      --muted: #a7a7b3;
+      --accent: #6ee7b7;
+      --border: #1f2027;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
+    nav a { margin-left: 16px; }
+    .hero { display: grid; gap: 16px; padding: 48px 0 24px; }
+    h1 { font-size: 44px; margin: 0; line-height: 1.1; }
+    .tag { color: var(--muted); max-width: 52ch; }
+    .cta { display: inline-block; margin-top: 12px; padding: 10px 16px; background: var(--accent); color: #0b0b0f; border-radius: 10px; font-weight: 600; }
+
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+    .card h3 { margin-top: 0; }
+    .muted { color: var(--muted); }
+
+    footer { margin-top: 40px; padding: 24px 0; border-top: 1px solid var(--border); color: var(--muted); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+    .skip-link { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+    .skip-link:focus { position: static; width: auto; height: auto; background: var(--accent); color:#000; padding:6px; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header role="banner">
+      <div>
+        <strong aria-label="Site title">Devanshee</strong>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="Intro">
+        <h1>Devanshee</h1>
+        <p class="tag">Building useful things. This is my official personal site—selected projects, writing, and ways to reach me.</p>
+        <a class="cta" href="#contact" aria-label="Jump to contact">Get in touch</a>
+      </section>
+
+      <section id="projects" class="grid" aria-label="Selected projects">
+        <article class="card">
+          <h3>Project One</h3>
+          <p class="muted">Short one-line impact statement. <a href="#" aria-label="Open Project One link">View</a></p>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p class="muted">What changed because of it. <a href="#" aria-label="Open Project Two link">View</a></p>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p class="muted">Results or numbers if possible. <a href="#" aria-label="Open Project Three link">View</a></p>
+        </article>
+      </section>
+
+      <section id="writing" style="margin-top:32px;" aria-label="Latest writing">
+        <div class="card">
+          <h3>Latest writing</h3>
+          <ul>
+            <li><a href="#">Post title one</a> <span class="muted">— YYYY-MM-DD</span></li>
+            <li><a href="#">Post title two</a> <span class="muted">— YYYY-MM-DD</span></li>
+            <li><a href="#">Post title three</a> <span class="muted">— YYYY-MM-DD</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:32px;" aria-label="Contact">
+        <div class="card">
+          <h3>Contact</h3>
+          <p class="muted">Email: <a href="mailto:you@yourname.tld">you@yourname.tld</a> · Social: 
+            <a href="https://about.me/yourname">About.me</a> · 
+            <a href="https://medium.com/@yourhandle">Medium</a> · 
+            <a href="https://www.youtube.com/@yourname">YouTube</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <small>© 2025 Devanshee. All rights reserved.</small>
+    </footer>
+  </div>
+</body>
+</html>
